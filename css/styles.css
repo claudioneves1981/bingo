@@ -1,0 +1,288 @@
+
+/*CORPO DA PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../imagens/background1.jpg');
+    background-size: 100%;
+}
+/*---------*/
+
+/*JANELA MODAL*/
+#janelaModal{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  transition: .4s ease;
+}
+
+#imgGanhador{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background: white;
+    transform: scale(0);  
+}
+
+#nomeGanhador{
+    position: relative;
+    text-align: center;
+    top: 310px;
+}
+
+/*---------*/
+
+
+/*--CABEÇALHO--*/
+#container-cabecalho{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-informacoes{
+    position: relative;
+    width: 80%;
+    height: 60px;
+    background: rgb(41, 41, 41);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container-informacoes form label{
+    color: white;
+    font-size: 20px;
+}
+
+.valor-bingo{
+    width: 120px;
+    height: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+/*---------*/
+
+/*--TABELA DE NUMEROS--*/
+#container-tabela{
+    position: relative;
+    top: 65px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#tabelaNumeros{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 100%;
+    background: rgba(255, 255, 255, .3);
+    text-align: center;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    padding: 5px;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .5);
+}
+
+#tabelaNumeros span{
+    position: relative;
+    margin: 2px;
+    flex-wrap: wrap;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(41, 41, 41);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#tabela{
+    border-collapse: collapse;
+    width: 550px;
+    height: 295px;
+}
+/*---------*/
+
+/*FEED-BACK DE BOLA GERADA PELO SISTEMA*/
+
+.feedBolaAtual{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: rgb(41, 41, 41);
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.feedBolaAtual::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 140%;
+    background: #4ee4ffd8;
+    border-radius: 25px;
+    animation: animaBorda 2s linear infinite;
+    box-shadow: 0px 0px 15px 5px #4ee4ffd8;
+}
+
+.feedBolaAtual::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: rgb(41, 41, 41);
+    border-radius: 25px;
+  }
+
+@keyframes animaBorda{
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg);
+    }
+}
+
+.feedBolaAtual img{
+    position: relative;
+    left: -170px;
+    width: 150px;
+    height: 150px;
+    z-index: 999;
+    transition: .2s ease;
+    opacity: 0.2;
+    animation: giraBola 3s infinite;
+}
+
+@keyframes giraBola{
+    0%{
+    }
+    75%{
+     
+      left: 0px;
+      opacity: 1;    
+    }
+    100%{
+        left: 170px;
+        opacity: 0.2; 
+    }
+}
+
+
+.finalizandoCartela{
+    position: relative;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, .3);
+    text-align: center;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .5);
+}
+
+/*---------*/
+
+/*CONTAINER DE BOLAS JOGADAS*/
+#feed-jogadores{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 250px;
+    background: rgb(41, 41, 41);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.bolas-jogadas{
+    position: relative;
+    width: 300px;
+    height: 170px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#minhaCartela{
+    position: relative;
+    top: 10px;
+    width: 320px;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}
+
+#minhaCartela h4{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+}
+
+#minhaCartela li{
+    position: relative;
+    margin: 0;
+    flex-wrap: wrap;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 1px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------*/
+
+
+
+/*RODA PÉ*/
+
+/*---------*/

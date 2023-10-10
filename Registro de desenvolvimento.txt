@@ -1,0 +1,101 @@
+//---------------------------------------------------------------//
+//                   REGISTRO DE DESENVOLVIMENTO                 //
+//                       Dev. Mateus Amaro                       //
+//---------------------------------------------------------------//
+
+
+ BINGO 1.0.0 - 13/09/2022   -- FIX
+ 
+ - PAINEL PRINCIPAL COM 40 NUMERO
+ - GERA DUAS CARTELAS CADA UMA CONTENDO 15 NUMEROS ALEATORIAS NÃO REPETIDOS DE 1 A 40
+ - CADA CARTELA POSSUINDO UM ID PARA IDENTIFICAÇÃO DA CARTELA
+ - USANDO O ID PARA VERIFICAR QUAL CARTELA FOI A PREMIADA
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.1.0 - 13/09/2022   -- FIX
+ 
+ - CRIAR PAINEL COM 60 NUMEROS GERADOS ALEATORIAMENTE
+ - GERAR BOLAS ALEATORIAS
+ - CRIAR PAINEL DE FEED-BACK DOS JOGADORES
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.2.0 - 13/09/2022   -- FIX
+ 
+ - GERAR BOLAS PARA PAINEL DE CARTELA
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.3.0 - 13/09/2022   -- FIX
+ 
+ - CRIAR BARRA PARA FEED-BACK DOS VALORES DO BINGO
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.4.0 - 13/09/2022   -- FIX
+ 
+ - CRIAR SONS PARA O GAME
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.5.0 - 14/09/2022   -- FIX
+ 
+ - CRIAR IMAGENS DAS BOLAS PARA O GERADOR
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.6.0 - 14/09/2022   -- FIX
+ 
+ - CRIAR UMA TAG <IMG> COM JAVASCRIPT PARA AS IMAGENS DAS BOLAS 
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.7.0 - 14/09/2022   -- FIX
+ 
+ - OTIMAZAÇÃO DA GERAÇÃO DE IMAGENS 
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.8.0 - 14/09/2022   -- FIX
+ 
+ - OTIMAZAÇÃO DA CHAMADA DAS BOLAS GERADAS
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.9.0 - 14/09/2022   -- FIX
+ 
+ - OTIMAZAÇÃO DAS FUNÇOES JA FIXADAS
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.10.0 - 14/09/2022   -- FIX
+ 
+ - OTIMIZAR FUNÇÃO PARA PREENCHER ARRAYS DAS BOLAS E DA CARTELA SEM REPETIR NUMEROS
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.11.0 - 15/09/2022   -- FIX
+ 
+ - ATRIBUIR ANIMAÇOES COM JAVASCRIPT E CSS PARA CHAMADA DAS BOLAS GERADAS
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.12.0 - 15/09/2022   -- FIX
+ 
+ - CRIAR FUNÇÃO PARA VERIFICAR O FINAL DA CARTELA
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.13.0 - 16/09/2022   -- FIX
+ 
+ - ATRIBUIR ANIMAÇOES PARA CARTELA QUE GANHAR
+ 
+ ----------------------------------------------------------
+ 
+ BINGO 1.13.0 - 00/00/2022  
+ 
+ - ATRIBUIR PHP AO CODIGO E CRIAR O BANCO DE DADOS
+ - ADICIONAR OS SONS AO JOGO
+ 
+ ----------------------------------------------------------
